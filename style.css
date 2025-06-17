@@ -84,17 +84,18 @@ body {
   padding: 0.5rem 1rem;
 }
 
-
-.nav-link {
-  font-family: "Bebas Neue", sans-serif;
-  font-weight: 400;
-  font-style: normal;
-  text-decoration: none;
-}
-
-
 #big-logo {
   max-width: 100%;
   height: auto;
   max-height: 200px;
+}
+.nav-link {
+font-family: "droog", sans-serif;
+font-weight: 900;
+font-style: normal;
+}
+h1 {
+font-family: "droog", sans-serif;
+font-weight: 900;
+font-style: normal;
 }
