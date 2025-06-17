@@ -13,17 +13,18 @@ body {
 }
 .gallery {
   display: grid;
-  grid-template-columns: repeat(4, 1fr); /* 4 cards per row */
+  grid-template-columns: repeat(5, 1fr); 
   gap: 20px;
   padding: 20px;
-  justify-items: center; /* center cards in each column */
+  justify-items: center; 
 }
+
 
 .card {
   background-color: #fff;
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  width: 220px; /* Must be less than 1fr's width for spacing */
+  width: 220px; 
   overflow: hidden;
   transition: transform 0.2s;
 }

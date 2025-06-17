@@ -1,6 +1,6 @@
 const products = [
   {
-    name: "Wooden Train",
+    name: "Train",
     price: 24.99,
     image: "/imgs/train1.jpg",
     description: "Handcrafted birch train with wheels."
@@ -22,7 +22,43 @@ const products = [
     price: 12.99,
     image: "/imgs/car1.jpg",
     description: "Colorful wooden puzzle blocks."
-  }
+  },
+   {
+    name: "Blocks",
+    price: 12.99,
+    image: "/imgs/block1.jpg",
+    description: "Colorful wooden puzzle blocks."
+  },
+  {
+    name: "Rainbow Train",
+    price: 12.99,
+    image: "/imgsr/train1.jpg",
+    description: "Colorful wooden puzzle blocks."
+  },
+  {
+    name: "Rainbow Boat",
+    price: 12.99,
+    image: "/imgsr/boat1.jpg",
+    description: "Colorful wooden puzzle blocks."
+  },
+  {
+    name: "Rainbow Plane",
+    price: 12.99,
+    image: "/imgsr/plane1.jpg",
+    description: "Colorful wooden puzzle blocks."
+  },
+  {
+    name: "Rainbow Car",
+    price: 12.99,
+    image: "/imgsr/car.jpg",
+    description: "Colorful wooden puzzle blocks."
+  },
+  {
+    name: "Rainbow Blocks",
+    price: 12.99,
+    image: "/imgsr/kids.jpg",
+    description: "Colorful wooden puzzle blocks."
+  },
 ];
 
 const gallery = document.getElementById('product-gallery');
