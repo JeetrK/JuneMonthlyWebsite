@@ -1,7 +1,9 @@
+//Object wit names of ppl and review number
 const reviews = [
     { name: "Chris Demetri", text: "This toy SLAPS BOI", rating: 5 },
     { name: "Zahr Evans", text: "I mean... Its alright", rating: 3 },
-    { name: "Dev Patel", text: "Pretty epic toy", rating: 4 }
+    { name: "Dev Patel", text: "Pretty epic toy", rating: 4 },
+    { name: "William Aaron", text: "I ordered the boat and it just instantly broke... I need a refund right NOW. I also bought some other blocks and my kids love it so at least there's that.", rating: 2 }
 ];
 
 let remainingReviews = [...reviews];

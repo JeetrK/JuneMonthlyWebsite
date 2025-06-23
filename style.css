@@ -135,5 +135,23 @@ p {
 
 #action-button {
   margin-top: 0 !important;
-  margin-bottom: 75% !important;
+
+}
+.center-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    min-height: 100vh;
+}
+
+.contact-box {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+.about-img {
+    max-width: 40%;
+    height: auto;
 }
