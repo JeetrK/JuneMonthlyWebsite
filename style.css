@@ -82,13 +82,19 @@ body {
 
 .navbar {
   padding: 0.5rem 1rem;
+  
 }
 
 #big-logo {
   max-width: 100%;
   height: auto;
-  max-height: 200px;
+  width: 80%;
+  display: block;
+  margin-top: 0 !important;
+  padding-top: 0 !important;
+  margin-top: -80px;
 }
+
 .nav-link {
 font-family: "droog", sans-serif;
 font-weight: 900;
@@ -122,5 +128,12 @@ p {
   font-style: normal;
 }
 
+.container {
+  margin-top: 0 !important;
+  padding-top: 0 !important;
+}
 
-
+#action-button {
+  margin-top: 0 !important;
+  margin-bottom: 75% !important;
+}
