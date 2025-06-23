@@ -1,9 +1,9 @@
 body {
   background: linear-gradient(to bottom right, #ffecd2, #fcb69f);
-  height: 100vh; /* Changed from min-height */
+  height: 100vh; 
   margin: 0;
   padding: 0;
-  overflow: hidden; /* Prevent scrolling */
+  overflow: hidden; 
 }
 
 .gallery {
@@ -59,14 +59,14 @@ body {
 
 
 .card-content p {
-  display: none; /* Hide description if any remain */
+  display: none; 
 }
 
 
 .card-content strong {
   color: #000;
   display: block;
-  margin-top: 4px; /* Use 0 if you want no spacing at all */
+  margin-top: 4px; 
 }
 
 .nav-link {

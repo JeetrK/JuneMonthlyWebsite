@@ -23,18 +23,18 @@ let remainingReviews = [...reviews];
 document.getElementById("action-button").addEventListener("click", function () {
     const container = document.getElementById("reviews-container");
 
-    // If no more reviews remain, reset the pool
+    // if there are no more reviews left, it resets
     if (remainingReviews.length === 0) {
         remainingReviews = [...reviews];
     }
 
-    // Pick and remove a random review
+    // picks and removes a random review
     const randomIndex = Math.floor(Math.random() * remainingReviews.length);
     const review = remainingReviews.splice(randomIndex, 1)[0];
 
     const stars = "★".repeat(review.rating) + "☆".repeat(5 - review.rating);
 
-    // Replace the innerHTML of the container (this shows only one at a time)
+    // replaces innerHTML of the container and it shows once at a time
 container.innerHTML = `
     <div class="review border rounded p-3 mb-2">
         <h5>${review.name}</h5>

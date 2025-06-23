@@ -50,13 +50,13 @@ const products = [
     description: "Build creativity and imagination with this high-quality, 72-piece block set. Made from naturally finished and smooth-sanded hardwood blocks, this set comes in a convenient wooden storage crate RAINBOW EDITION (13” L x 12” W x 2” H). (Age3+)"
   },
 ];
-
+//Grabs the gallery container where the cards will be shown
 const gallery = document.getElementById('product-gallery');
-
+//builds one card per product and append it to the gallery
 products.forEach((product, index) => {
   const card = document.createElement('div');
   card.classList.add('card');
-
+ // Card markup
   card.innerHTML = `
     <img src="${product.image}" alt="${product.name}">
     <div class="card-content">
@@ -67,23 +67,23 @@ products.forEach((product, index) => {
 
   gallery.appendChild(card);
 });
-
+//description triggered by clicking more info button
 function showDescription(button) {
   const index = button.getAttribute('data-index');
   const product = products[index];
-
+// updates modal title text
   const modalTitle = document.getElementById('productModalLabel');
   modalTitle.innerText = product.name;
 
-  // Add rainbow-text class if product name contains "Rainbow"
+  // adds rainbow-text class if product name contains Rainbow, if not it is removed
   if (product.name.includes('Rain')) {
     modalTitle.classList.add('rainbow-text');
   } else {
     modalTitle.classList.remove('rainbow-text');
   }
-
+ // fills the body of the modal with the long description
   document.getElementById('modalDescription').innerText = product.description || "No description available.";
-
+//shows the bootstrap modal
   const modal = new bootstrap.Modal(document.getElementById('productModal'));
   modal.show();
 }
